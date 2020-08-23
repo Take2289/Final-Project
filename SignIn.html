@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<Img src="Logo.jpg" max-width="100" height="auto" alt="logo" class="logo" aria-label="This is a logo of the company" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SignInPage</title>
+    <meta name="robots" content="index, nofollow">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function displayUserDetails() {
+            var userName = document.getElementById("userName").value;
+            var password = document.getElementById("password").value;
+            alert("USERNAME:" + userName + "\n PASSWORD:" + password);
+
+        }
+    </script>
+</head>
+<p> Welcome!
+
+    <body>
+
+        <h1>Please Sign In!</h1>
+
+</p>
+<?php
+       echo "Using php to display<br>  
+       <form action="" >
+       <p>Enter name:<input type="text" name="userName" id="userName"></p>
+       <p>Enter password:<input type="text" password="password" id="password"></p>
+         <p><input class="MyButton"type="button" value="Submit" onclick="displayUserDetails(),window.location.href='Home.html'""></p>
+       </form>
+       
+       <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <p class="footer-links">
+                <a href="Home.html">Home</a> |
+                <a href="ManageyourMoney.html">ManageMoney</a> |
+                <a href="AboutUs.html">About</a> |
+                <a href="Contact US.html">Contact</a>
+            </p>
+
+            <p class="footer-company-name">© 2020 Money Management Solutions Ltd.</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>405 - Market Street,
+                     Building 1800, Floor 65 A</span> Phila, Pennsylvania - 19139</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 6103558473</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="Contact US.html">support@buildabank.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span> We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/login"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body> 
+          
+    </html>

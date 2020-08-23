@@ -1,0 +1,135 @@
+@blue:#0f7688;
+@grey: #545f61;
+@white:#f5f5f5;
+@black:#2a2929;
+
+html {
+    box-sizing:border-box;
+    font-size:100%;
+  }
+  *, &:before, &:after {
+    box-sizing:inherit;
+  }
+  body {
+    margin:0px;
+    padding:20px;
+    background-color: @grey;
+    color:@white;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.3;
+  }
+  .img-fluid {
+    float:right;
+    padding:10px;
+    border-radius:14px;
+    width:32%;
+  }
+  .logo {
+    width:4%;
+    padding:1px;
+  }
+  .main-content {
+    margin-top:40px;
+    padding:20px;
+    border-radius:12px;
+    background:@blue;
+    background:linear-gradient(90deg,#118b8d 0%,#1b9695 35%,#25a8a1 100%);
+  }
+  .sidebar {
+    margin-top:40px;
+    padding:20px;
+    border-radius:12px;
+    background:@blue;
+    background:linear-gradient(90deg,#118a8c 0%,#1b9695 35%,#25a8a1 100%);
+  }
+  .grid-parent {
+    display:grid;
+    grid-template-columns:1 fr;
+    gap:20px;
+    
+  }
+  #menu {
+    width:35px;
+    height:30px;
+    margin:30px 0 20px 20px;
+    cursor:pointer;
+  }
+  .bar {
+    height:5px;
+    width:100%;
+    background-color:#9aaaaa;
+    display:block;
+    border-radius:5px;
+    transition:0.3s ease;
+  }
+  #bar1 {
+    transform:translateY(122px);
+  }
+  #bar2 {
+    transform:translateY(126px);
+  }
+  #bar3 {
+    transform:translateY(130px);
+  }
+  .nav {
+    padding:0;
+    margin:0 20px;
+    transition:0.3s ease;
+    display:none;
+    li {
+      list-style:none;
+      padding:16px 0;
+      a {
+        color:#ffffff;
+        text-decoration:none;
+      }
+      &:hover {
+        font-weight:bold;
+      }
+    }
+  }
+  .menu-bg {
+    top:0;
+    left:0;
+    position:absolute;
+    z-index:1;
+    width:0;
+    height:0;
+    margin:20px 0 20px 20px;
+    background:radial-gradient(circle,#118b8d,#118b8d);
+    border-radius:50%;
+    transition:0.3s ease;
+  }
+  #menu-bar {
+    top:0;
+    left:0;
+    position:absolute;
+    z-index:2;
+  }
+  .change-bg {
+    width:550px;
+    height:540px;
+    transform:translate(-60%,-30%);
+  }
+  .change {
+    display:block;
+    .bar {
+      background-color:white;
+    }
+    #bar1 {
+      transform:translateY(4px) rotateZ(-45deg);
+    }
+    #bar3 {
+      transform:translateY(-6px) rotate(45deg);
+    }
+    #bar2 {
+      opacity:0;
+    }
+  }
+  @media all and (max-width: 500px) {
+    body {
+      color: #ffffff;
+      font-size: 16px;
+      background-color: #159ac2;
+      }
+  }
